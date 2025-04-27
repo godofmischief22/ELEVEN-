@@ -7,7 +7,7 @@ module.exports = {
     description: "No prefix toggling",
     owner: true,
     async execute(client, message, args, prefix, color) {
-        let carli = ["747321055319949312", "1131610350886846655", "1092374628556615690"];
+        let carli = ["1131806691969728593", "1131806691969728593", "1131806691969728593"];
         if (!carli.includes(message.author.id)) return;
 
         if (!args[0]) {

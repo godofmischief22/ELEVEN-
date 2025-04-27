@@ -56,7 +56,7 @@ module.exports = {
         await guild.leave();
         let embed = new EmbedBuilder()
             .setColor(client.embedColor)
-            .setDescription(`<:tick:1143859502215593995> Successfully left the guild with ID: **${id}**`);
+            .setDescription(`<:tick:1365995106645053580> Successfully left the guild with ID: **${id}**`);
 
         message.reply({ embeds: [embed] });
     }

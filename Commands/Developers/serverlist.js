@@ -12,7 +12,7 @@ module.exports = {
     permission: [],
     owner: true, // Mark this command as owner-only
     async execute(client, message, args, prefix, color) {
-        const owners = ["1219568207719960578", "747321055319949312"];
+        const owners = ["1131806691969728593", "1131806691969728593"];
 
         if (!owners.includes(message.author.id)) {
             return message.channel.send({ 
