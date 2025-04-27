@@ -29,7 +29,7 @@ module.exports = new Object({
                 embeds: [
                     new EmbedBuilder()
                         .setColor("#2F3136")
-                        .setDescription(`<:cross1:1074564046134718474> | You don't have any playlist named **${Name}**.`)
+                        .setDescription(`<:crosss:1144288980385415279> | You don't have any playlist named **${Name}**.`)
                 ]
             });
         }
@@ -40,7 +40,7 @@ module.exports = new Object({
                 embeds: [
                     new EmbedBuilder()
                         .setColor("#2F3136")
-                        .setDescription(`<:cross1:1074564046134718474> | Invalid track number provided for playlist ${Name}.`)
+                        .setDescription(`<:crosss:1144288980385415279> | Invalid track number provided for playlist ${Name}.`)
                 ]
             });
         }
@@ -51,7 +51,7 @@ module.exports = new Object({
                 embeds: [
                     new EmbedBuilder()
                         .setColor("#2F3136")
-                        .setDescription(`<:cross1:1074564046134718474> | Invalid track number provided for playlist ${Name}.`)
+                        .setDescription(`<:crosss:1144288980385415279> | Invalid track number provided for playlist ${Name}.`)
                 ]
             });
         }
@@ -64,7 +64,7 @@ module.exports = new Object({
         const embed = new EmbedBuilder()
             .setColor("#2F3136")
             .setAuthor(`Removed Song From Playlist ${Name}`, message.author.displayAvatarURL({ dynamic: true }), "https://discord.gg/ejSESjpgsF")
-            .setDescription(`<:queue:1066040371576057936> [${tracks[Options].title.substring(0, 63)}](${tracks[Options].uri})`);
+            .setDescription(`<:queue:1366005487878930523> [${tracks[Options].title.substring(0, 63)}](${tracks[Options].uri})`);
 
         return message.channel.send({ embeds: [embed] });
     }

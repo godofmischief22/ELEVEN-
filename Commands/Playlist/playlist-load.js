@@ -43,7 +43,7 @@ module.exports = new Object({
                     new EmbedBuilder()
                         .setColor("#2F3136")
                         .setDescription(
-                            `<:cross1:1074564046134718474> | You don't have any Playlist named **${Name}**.`,
+                            `<:crosss:1144288980385415279> | You don't have any Playlist named **${Name}**.`,
                         ),
                 ],
             });
@@ -89,7 +89,7 @@ module.exports = new Object({
                         new EmbedBuilder()
                             .setColor("#2F3136")
                             .setDescription(
-                                `<:cross1:1074564046134718474> | Can't load tracks from Playlist **${Name}**`,
+                                `<:crosss:1144288980385415279> | Can't load tracks from Playlist **${Name}**`,
                             ),
                     ],
                 })
@@ -102,7 +102,7 @@ module.exports = new Object({
                     new EmbedBuilder()
                         .setColor("#2F3136")
                         .setDescription(
-                            `<:Success:1074564018385211424> | Successfully loaded **${count}** tracks from Playlist **${Name}**`,
+                            `<:tick:1365995106645053580> | Successfully loaded **${count}** tracks from Playlist **${Name}**`,
                         ),
                 ],
             })

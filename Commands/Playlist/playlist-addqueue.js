@@ -34,7 +34,7 @@ module.exports = {
                     new EmbedBuilder()
                         .setColor("#2F3136")
                         .setDescription(
-                            `<:AresCross:1093062761069690890> | You don't have any Playlist named **${Name}**.`,
+                            `<:crosss:1144288980385415279> | You don't have any Playlist named **${Name}**.`,
                         ),
                 ],
             });
@@ -76,10 +76,10 @@ module.exports = {
             .setAuthor(
                 `Added Queue To Playlist ${Name}`,
                 message.author.displayAvatarURL({ dynamic: true }),
-                "https://discord.gg/ejSESjpgsF",
+                "https://discord.gg/ZRXSwG3Xb6",
             )
             .setDescription(
-                `<:queue:1066040371576057936> **Total Tracks Added: ${playlist.length - oldSong.length}**`,
+                `<:queue:1366005487878930523> **Total Tracks Added: ${playlist.length - oldSong.length}**`,
             )
             .setColor("#2F3136");
         return message.channel.send({ embeds: [embed] });

@@ -28,7 +28,7 @@ module.exports = {
             return message.reply({ embeds: [thing] });
         }
         if (!data) {
-            return message.reply({ embeds: [new EmbedBuilder().setColor("#2F3136").setDescription(`<:AresCross:1093062761069690890> | You don't have any Playlist named **${Name}**.`)] });
+            return message.reply({ embeds: [new EmbedBuilder().setColor("#2F3136").setDescription(`<:crosss:1144288980385415279> | You don't have any Playlist named **${Name}**.`)] });
         }
         const song = player.queue.current;
         let oldSong = data.playlist;
@@ -51,7 +51,7 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setColor("#2F3136")
             .setAuthor(`Added Song To Playlist ${Name}`, message.author.displayAvatarURL({ dynamic: true }), "https://discord.gg/ejSESjpgsF")
-            .setDescription(`<:queue:1066040371576057936> [${song.title.substring(0, 63)}](${song.uri})`);
+            .setDescription(`<:queue:1366005487878930523> [${song.title.substring(0, 63)}](${song.uri})`);
         return message.channel.send({ embeds: [embed] });
 
     }
