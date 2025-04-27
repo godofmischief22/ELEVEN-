@@ -23,26 +23,13 @@ module.exports = {
     MongoData: "mongodb+srv://kxklow:928zzl@cluster0.0cz6waa.mongodb.net/?retryWrites=true&w=majority",
     EmbedColor: "#6d2eb5",
     Owners: ["1131806691969728593"],
-    Nodes: [
-        {
-            name: "node1",
-            url: "server.relocation.tk:1032",
-            auth: "youshallnotpass",
-            secure: false,
-        },
-        {
-            name: "node2",
-            url: "lavalink.razorbot.buzz:6969",
-            auth: "dsc.gg/razorsupport",
-            secure: false,
-        },
-        {
-            name: "node3",
-            url: "lavalink.jirayu.net:13592",
-            auth: "youshallnotpass",
-            secure: false,
-        },
-    ],
+    nodes: [{
+        host: "lavalink.jirayu.net",
+        password: "youshallnotpass",
+        port: 13592,
+        secure: false,
+        name: "Main Node"
+    }],
     hooks: {
         guildAdd: "https://discord.com/api/webhooks/1365929906311270480/NzvVA2oGWEwGY0-HUcmvqBrQTOtVkJ6Tpe07rJl95LtAtw0uzsYifxsSRNpwUABu1V0w",
         guildRemove: "https://discord.com/api/webhooks/1365932038070337626/iNa938BT1xyM-5CAEDdOGgAWYgV6gQ-hyOaD9hVcp44_Xf2TE9ISBlAhwYICCR5X6Iep",
