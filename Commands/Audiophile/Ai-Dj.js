@@ -36,7 +36,7 @@ module.exports = {
             // Start with a DJ-style intro message
             const introEmbed = new EmbedBuilder()
                 .setColor(color)
-                .setDescription(`<a:DJ:1285294109975904347> **Yo, ${message.author.username}! I'm your AI DJ!**\nYour personal DJ for remix vibes! Ready to set the vibe? Let's get started by choosing a language for the tunes. Pick between Hindi or English, and the AI will queue up DJ-style remixes and upbeat tracks to get the party going in your voice channel. Perfect for instantly setting the mood!`)
+                .setDescription(`<a:enjoy:1144936606843797524> **Yo, ${message.author.username}! I'm your AI DJ!**\nYour personal DJ for remix vibes! Ready to set the vibe? Let's get started by choosing a language for the tunes. Pick between Hindi or English, and the AI will queue up DJ-style remixes and upbeat tracks to get the party going in your voice channel. Perfect for instantly setting the mood!`)
                 .setFooter({ text: 'Your AI DJ is ready to vibe!' });
 
             // Language selection menu
@@ -81,7 +81,7 @@ module.exports = {
                 // DJ-style response
                 const djResponseEmbed = new EmbedBuilder()
                     .setColor(color)
-                    .setDescription(`<a:DJ:1285294109975904347> **Awesome choice! Playing the best ${selectedLanguage} tunes for you, ${message.author.username}!**`)
+                    .setDescription(`<a:enjoy:1144936606843797524> **Awesome choice! Playing the best ${selectedLanguage} tunes for you, ${message.author.username}!**`)
                     .setFooter({ text: 'Let the music flow!' });
 
                 await interaction.update({ embeds: [djResponseEmbed], components: [] });
@@ -92,11 +92,11 @@ module.exports = {
                     if (searchResult.type === 'PLAYLIST' && searchResult.tracks.length > 0) {
                         dispatcher.queue.add(searchResult.tracks);
                         if (!dispatcher.playing && !dispatcher.paused) dispatcher.play();
-                        interaction.followUp(`<:11tick:1288060052250431559> **Added ${searchResult.tracks.length} tracks to the queue!** Let's vibe!`);
+                        interaction.followUp(`<:11tick:1365979708726050856> **Added ${searchResult.tracks.length} tracks to the queue!** Let's vibe!`);
                     } else if (searchResult.type === 'TRACK' && searchResult.tracks.length > 0) {
                         dispatcher.queue.add(searchResult.tracks);
                         if (!dispatcher.playing && !dispatcher.paused) dispatcher.play();
-                        interaction.followUp(`<:11tick:1288060052250431559> **Added a track to the queue!** Time to enjoy the beats!`);
+                        interaction.followUp(`<:11tick:1365979708726050856> **Added a track to the queue!** Time to enjoy the beats!`);
                     } else {
                         interaction.followUp('No tracks found in the selected playlist.');
                     }

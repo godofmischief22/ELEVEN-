@@ -46,7 +46,7 @@ module.exports = {
 
             const languageEmbed = new EmbedBuilder()
                 .setColor(color)
-                .setDescription("<a:arrow:1276458122734469161> Tune into your favorite radio station based on your mood and language! Choose between Hindi or English, and then select a category like Romantic, Phonk, or Lofi. The bot will start playing music from the selected genre.");
+                .setDescription("<a:Arrow:1144838236464762940> Tune into your favorite radio station based on your mood and language! Choose between Hindi or English, and then select a category like Romantic, Phonk, or Lofi. The bot will start playing music from the selected genre.");
 
             const sentMessage = await message.reply({ embeds: [languageEmbed], components: [languageRow] });
 
@@ -84,7 +84,7 @@ module.exports = {
 
                 const categoryEmbed = new EmbedBuilder()
                     .setColor(color)
-                    .setDescription(`<a:arrow:1276458122734469161> Select a music category from the dropdown for ${selectedLanguage} songs.`);
+                    .setDescription(`<a:Arrow:1144838236464762940> Select a music category from the dropdown for ${selectedLanguage} songs.`);
 
                 await interaction.update({ embeds: [categoryEmbed], components: [categoryRow] });
 
@@ -147,7 +147,7 @@ module.exports = {
                             return interaction.reply('Invalid category selected.');
                     }
 
-                    await interaction.reply(`<a:google_search:1275390604867665950> Playing ${selectedCategory.replace('_', ' ')} music`);
+                    await interaction.reply(`<a:google_search:1365977129698721812> Playing ${selectedCategory.replace('_', ' ')} music`);
 
                     try {
                         const searchResult = await dispatcher.search(playlistUrl, { requester: message.author });
