@@ -31,7 +31,7 @@ module.exports = new Object({
                     client.button()
                         .setStyle(client.config.button.link)
                         .setLabel('Top.gg')
-                        .setURL('https://top.gg/bot/1277525844319014955/vote'),
+                        .setURL(''),
                     
                     client.button()
                         .setStyle(client.config.button.link)

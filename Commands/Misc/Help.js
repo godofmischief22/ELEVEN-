@@ -91,7 +91,7 @@ module.exports = new Object({
                 const fieldData = [
                     {
                         name: "・Usage",
-                        value: `${command.usage ? `> **<:11dot:1287835131633209446> ${prefix}${command.name}**` : `..`}`,
+                        value: `${command.usage ? `> **<:11dot:1365974349244268544> ${prefix}${command.name}**` : `..`}`,
                         inline: false,
                     },
                     {
@@ -101,7 +101,7 @@ module.exports = new Object({
                     },
                     {
                         name: "・Category",
-                        value: `> <:11dot:1287835131633209446> **${command.category ? command.category : "None"}**`,
+                        value: `> <:11dot:1365974349244268544> **${command.category ? command.category : "None"}**`,
                         inline: false,
                     },
                 ];
@@ -109,7 +109,7 @@ module.exports = new Object({
                 if (commandAliases.length > 0)
                     fieldData.push({
                         name: "・Aliases",
-                        value: `> ${commandAliases.map((x) => `<:11dot:1287835131633209446> **${x}**`).join(", ")}`,
+                        value: `> ${commandAliases.map((x) => `<:11dot:1365974349244268544> **${x}**`).join(", ")}`,
                         inline: false,
                     });
 
@@ -119,14 +119,14 @@ module.exports = new Object({
                 )
                     fieldData.push({
                         name: "・Sub command(s)",
-                        value: `> ${CommandsubCommands.map((x) => `<:11dot:1287835131633209446> **${x}**`).join("\n")}`,
+                        value: `> ${CommandsubCommands.map((x) => `<:11dot:1365974349244268544> **${x}**`).join("\n")}`,
                         inline: false,
                     });
 
                 if (commandExamples.length > 0 && commandExamples.length < 5)
                     fieldData.push({
                         name: "・Example(s)",
-                        value: `> ${commandExamples.map((x) => `**<:11dot:1287835131633209446> ${x}**`).join("\n")}`,
+                        value: `> ${commandExamples.map((x) => `**<:11dot:1365974349244268544> ${x}**`).join("\n")}`,
                         inline: false,
                     });
 
@@ -154,28 +154,28 @@ module.exports = new Object({
                 .setThumbnail(message.author.displayAvatarURL())
                 .setDescription(
                     `
-<:11wave:1288060049985503262> **Heyy.. ${message.author.username}! I'm Eleven A Minimalistic Music Bot Packed With Features Never Seen Before!**
+<:11wave:1365988574712954941> **Heyy.. ${message.author.username}! I'm Eleven A Minimalistic Music Bot Packed With Features Never Seen Before!**
 
-- <:11mil:1288060043429941350> **Command Categories ~** 
-  - <:11music:1288060045300465717> **Music**
-  - <:11audiophile:1288061245978574858> **Audiophile**
-  - <:11musicWaves:1288060047728840725> **Filters**
-  - <:11utility:1288060041861136384> **Settings**
-  - <:11misc:1288061620861534260> **Misc**
-  - <:11playlist:1288060039143100499> **Playlist**
+- <:11mil:1365988908529225790> **Command Categories ~** 
+  - <:11music:1365989327674413077> **Music**
+  - <:11audiophile:1365989462970077246> **Audiophile**
+  - <:11musicWaves:1365989818714292264> **Filters**
+  - <:11utility:1365989914751270963> **Settings**
+  - <:11misc:1365974952913928262> **Misc**
+  - <:11playlist:1365990144674631710> **Playlist**
 
-> <:11dot:1287835131633209446> **Use the dropdown below to get more info**
+> <:11dot:1365974349244268544> **Use the dropdown below to get more info**
                     `,
                 )
                 .setColor(color);
 
             const emojis = {
                 Music: `<:nmusic:1275390609749966921>`,
-                Filters: `<:11musicWaves:1288060047728840725>`,
-                Settings: `<:11utility:1288060041861136384>`,
+                Filters: `<:11musicWaves:1365989818714292264>`,
+                Settings: `<:11utility:1365989914751270963>`,
                 Misc: `<:11misc:1288061620861534260>`,
-                Playlist: `<:11playlist:1288060039143100499>`,
-                Audiophile: `<:11audiophile:1288061245978574858>`
+                Playlist: `<:11playlist:1365990144674631710>`,
+                Audiophile: `<:11audiophile:1365989462970077246>`
             };
             const selectMenuArray = [];
 

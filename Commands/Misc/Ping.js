@@ -16,7 +16,7 @@ module.exports = {
 
         const embed = client.embed()
             .setColor(color)
-            .setDescription(`> <:11dot:1287835131633209446> **__Ping__ : ${ping} ms**`);
+            .setDescription(`> <:11dot:1365974349244268544> **__Ping__ : ${ping} ms**`);
 
         return message.reply({ embeds: [embed] });
     },
