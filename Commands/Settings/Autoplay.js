@@ -30,6 +30,6 @@ module.exports = new Object({
     async execute(client, message, args, prefix, color, dispatcher) {
         dispatcher.data.set('autoplay', !dispatcher.data.get('autoplay'));
         await client.util.update(dispatcher, client);
-        return await client.util.msgReply(message, `<:stolen_emoji:1275400010531344436> Autoplay is now ${dispatcher.data.get('autoplay') ? '*`enabled`*' : '*`disabled`*'}.`, color);
+        return await client.util.msgReply(message, `<:stolen_emoji:1366010164272037981> Autoplay is now ${dispatcher.data.get('autoplay') ? '*`enabled`*' : '*`disabled`*'}.`, color);
     }
 })
