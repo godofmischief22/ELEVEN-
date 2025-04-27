@@ -1,13 +1,34 @@
-const db = require("../../Models/Setup");
+const db = require("../../Models/247");
+const db2 = require("../../Models/247");
 module.exports = new Object({
-    name: "playerCreate",
+    name: "playerDestroy",
     /**
      * @param {import("../../Main")} client
      * @param {import("kazagumo").KazagumoPlayer} dispatcher
      */
     async execute(client, dispatcher) {
+        console.log("playerDestroy");
         const guild = client.guilds.cache.get(dispatcher.guildId);
         if (!guild) return;
+        const maindata = await db2.find();
+        for (const data of maindata) {
+            const index = maindata.indexOf(data);
+            setTimeout(async () => {
+                const text = client.channels.cache.get(data.textChannel);
+                const guild = client.guilds.cache.get(data._id);
+                const voice = client.channels.cache.get(data.voiceChannel);
+                if (!guild || !text || !voice) return data.delete();
+                const player = client.dispatcher.createPlayer({
+                    guildId: guild.id,
+                    textId: text.id,
+                    voiceId: voice.id,
+                    deaf: true,
+                    shardId: guild.shardId,
+                });
+            }),
+                index * 100;
+        }
+        const color = client.color ? client.color : "#f50a83";
         const data = await db.findOne({ _id: guild.id });
         if (!data) return;
         const channel = guild.channels.cache.get(data.channel);
@@ -17,9 +38,21 @@ module.exports = new Object({
             message = await channel.messages.fetch(data.message, {
                 cache: true,
             });
-        } catch (e) {}
+        } catch (error) {}
         if (!message) return;
 
+        const embed1 = client
+            .embed()
+            .setColor(color)
+            .setTitle("Nothing playing right now")
+            .setDescription(
+                `• [Invite](${client.config.links.invite}) • [Vote](${client.config.links.vote}) • [Support Server](${client.config.links.support})`,
+            )
+            .setFooter({
+                text: `Thanks for using ${client.user.username}`,
+                iconURL: client.user.displayAvatarURL(),
+            })
+            .setImage(client.config.links.bg);
         const pausebut = client
             .button()
             .setCustomId("pause_but")
@@ -103,7 +136,8 @@ module.exports = new Object({
         await message
             .edit({
                 content:
-                    "__**Join a voice channel and queue songs by name/url.**__\n\n",
+                    "__**Join a voice channel and queue songs by name/url**__\n\n",
+                embeds: [embed1],
                 components: [row1, row2],
             })
             .catch(() => {});
