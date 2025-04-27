@@ -42,20 +42,23 @@ module.exports = {
             });
 
         // Embed 2: Developers
-        const embed2 = client.embed()
-        .setAuthor({
-            name: `About Eleven ~ Developers`,
-            url: `https://discord.gg/ZRXSwG3Xb6`,
-            iconURL: client.user.displayAvatarURL(),
-        })
-            .setDescription(`
-                <:11dot:1365974349244268544> **Below is the information about the Team behind Eleven.**
+const embed2 = client.embed()
+    .setAuthor({
+        name: `About Eleven ~ Developers`,
+        url: `https://discord.gg/ZRXSwG3Xb6`,
+        iconURL: client.user.displayAvatarURL(),
+    })
+    .setDescription(`
+        <:11dot:1365974349244268544> **Below is the information about the Team behind Eleven.**
 
-                > <:11dev:1365984904164147201> **Owner & Developer**
-                \`-\` **[Aadarsh](<:11dot:1365974349244268544>)**
-                <a:qt:1145009408636629123> **Status: Simping, I guess?**
-                <:11link:1365987240773287996> **Socials: [Discord](https://discord.gg/ZRXSwG3Xb6)**
-                **-------------------------** );
+        > <:11dev:1365984904164147201> **Owner & Developer**
+        \`-\` **[Aadarsh](https://discord.com/users/YOUR_USER_ID)**
+        <a:qt:1145009408636629123> **Status: Simping, I guess?**
+        <:11link:1365987240773287996> **Socials: [Discord](https://discord.gg/ZRXSwG3Xb6)**
+        **-------------------------**
+    `)
+    .setColor(color); // <-- you were missing this
+
 
         // Navigation buttons
         const navigationRow = (show1, show2, show3) => new ActionRowBuilder().addComponents(
