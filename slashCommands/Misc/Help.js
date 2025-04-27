@@ -162,7 +162,7 @@ module.exports = {
                 Filters: `<:11musicWaves:1365989818714292264>`,
                 Settings: `<:11utility:1365989914751270963>`,
                 Misc: `<:11misc:1365974952913928262>`,
-                Playlist: <:11playlist:1365990144674631710>`,
+                Playlist: `<:11playlist:1365990144674631710>`,
                 Audiophile: `<:11audiophile:1365989462970077246>`,
             };
 
