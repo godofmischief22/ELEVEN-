@@ -19,9 +19,9 @@ module.exports = new Object({
         const embed = client
             .embed()
             .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
-            .setTitle("> <:11musicWaves:1288060047728840725> Premium Features")
+            .setTitle("> <:11musicWaves:1365989818714292264> Premium Features")
             .setColor(color)
-            .setDescription(`<:11dot:1287835131633209446> **Unlock the full potential of the Eleven with premium!** \n\n> <:11dot:1287835131633209446> *With a premium membership, you get access to __exclusive__ features, enhanced performance, and priority support. Upgrade your experience and take your server to the next level!*`)
+            .setDescription(`<:11dot:1365974349244268544> **Unlock the full potential of the Eleven with premium!** \n\n> <:11dot:1365974349244268544> *With a premium membership, you get access to __exclusive__ features, enhanced performance, and priority support. Upgrade your experience and take your server to the next level!*`)
             .addFields(
                 {
                     name: "<:11prem:1288556207778566154> `.` Premium Benefits",
@@ -29,12 +29,12 @@ module.exports = new Object({
                     inline: false,
                 },
                 {
-                    name: "<:11misc:1288061620861534260> `.` How to Get Premium?",
-                    value: `> \`-\` [Purchase Premium](https://discord.gg/teamkronix) By Creating a Ticket in the Support Server to upgrade your server.`,
+                    name: "<:11misc:1365974952913928262> `.` How to Get Premium?",
+                    value: `> \`-\` [Purchase Premium](https://discord.gg/ZRXSwG3Xb6) By Creating a Ticket in the Support Server to upgrade your server.`,
                     inline: false,
                 },
                 {
-                    name: "<:11link:1288060059682603029> `.` Links",
+                    name: "<:11link:1365987240773287996> `.` Links",
                     value: `\`-\` [Support](https://discord.gg/teamkronix) **/** [Vote](https://top.gg/bot/${client.user.id}/vote)\n\`\`\`diff\n- Premium Features are free for now EXCLUDING No-prefix. However Custom Eleven is Available.\`\`\``,
                     inline: false,
                 }
@@ -46,32 +46,32 @@ module.exports = new Object({
 
         const embed2 = client
             .embed()
-            .setTitle("<:narrow:1275390602380574726> **Premium Features and Pricing**")
+            .setTitle("<a:Arrow:1144838236464762940> **Premium Features and Pricing**")
             .addFields(
                 {
-                    name: '<:11dot:1287835131633209446> **Premium Features**',
+                    name: '<:11dot:1365974349244268544> **Premium Features**',
                     value: `\`1.\` **No Prefix**\n\`2.\` **Radio**\n\`3.\` **Custom Playlist**\n\`4.\` **No Vote**`,
                 },
                 {
-                    name: '<:11prem:1288556207778566154> **Monthly Plan**',
+                    name: '<:11prem:1365975457434177586> **Monthly Plan**',
                     value: `\`\`\` - 70 INR/month - Access to all premium features\`\`\``,
                 },
                 {
-                    name: '<:11prem:1288556207778566154> **Yearly Plan**',
+                    name: '<:11prem:1365975457434177586> **Yearly Plan**',
                     value: `\`\`\` - 500 INR/year - Save 2 months with yearly billing\`\`\``,
                 },
             )
 
         
-            .setImage("https://github.com/akshew/image-hosting/blob/main/kronix1.png?raw=true");
+            .setImage("https://github.com/akshew/image-hosting/blob/main/eleven.png?raw=true");
 
         const customElevenEmbed = client
             .embed()
             .setTitle("Custom Eleven")
             .setDescription(`
-                <:11star:1288556209774788618> **Introducing Custom Eleven**
+                <:11star:1366009325675347988> **Introducing Custom Eleven**
 
-                > <:11misc:1288061620861534260> \`-\` What is Custom Eleven? 
+                > <:11misc:1365974952913928262> \`-\` What is Custom Eleven? 
                 > \`-\` **So, it is a custom instance of Eleven. Where it will have a custom name, custom profile picture, custom bio, custom embed color, etc.**
 
                 Features of Custom Eleven
