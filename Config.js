@@ -23,13 +23,45 @@ module.exports = {
     MongoData: "mongodb+srv://kxklow:928zzl@cluster0.0cz6waa.mongodb.net/?retryWrites=true&w=majority",
     EmbedColor: "#6d2eb5",
     Owners: ["1131806691969728593"],
-    nodes: [{
-        host: "lavalink.jirayu.net",
-        password: "youshallnotpass",
-        port: 13592,
+    Nodes: [
+    {
+        name: "LavaLink Freemium",
+        url: "lava.link:80",
+        auth: "youshallnotpass",
         secure: false,
-        name: "Main Node"
-    }],
+    },
+    {
+        name: "Darrennath",
+        url: "lavalink.darrennath.dev:443",
+        auth: "darren",
+        secure: true,
+    },
+    {
+        name: "LavaHost",
+        url: "lavalink.lavahost.net:443",
+        auth: "root",
+        secure: true,
+    },
+    {
+        name: "GatorLink",
+        url: "lavalink.gatorcdn.xyz:443",
+        auth: "gator",
+        secure: true,
+    },
+    {
+        name: "Node3",
+        url: "lavalink3.opuses.live:443",
+        auth: "opuses",
+        secure: true,
+    },
+    {
+        name: "FreeNode",
+        url: "free.lavalink.io:443",
+        auth: "freepass",
+        secure: true,
+    },
+],
+
     hooks: {
         guildAdd: "https://discord.com/api/webhooks/1365929906311270480/NzvVA2oGWEwGY0-HUcmvqBrQTOtVkJ6Tpe07rJl95LtAtw0uzsYifxsSRNpwUABu1V0w",
         guildRemove: "https://discord.com/api/webhooks/1365932038070337626/iNa938BT1xyM-5CAEDdOGgAWYgV6gQ-hyOaD9hVcp44_Xf2TE9ISBlAhwYICCR5X6Iep",
