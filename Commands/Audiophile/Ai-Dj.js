@@ -92,11 +92,11 @@ module.exports = {
                     if (searchResult.type === 'PLAYLIST' && searchResult.tracks.length > 0) {
                         dispatcher.queue.add(searchResult.tracks);
                         if (!dispatcher.playing && !dispatcher.paused) dispatcher.play();
-                        interaction.followUp(`<:11tick:1365979708726050856> **Added ${searchResult.tracks.length} tracks to the queue!** Let's vibe!`);
+                        interaction.followUp(`<:tick:1365995106645053580> **Added ${searchResult.tracks.length} tracks to the queue!** Let's vibe!`);
                     } else if (searchResult.type === 'TRACK' && searchResult.tracks.length > 0) {
                         dispatcher.queue.add(searchResult.tracks);
                         if (!dispatcher.playing && !dispatcher.paused) dispatcher.play();
-                        interaction.followUp(`<:11tick:1365979708726050856> **Added a track to the queue!** Time to enjoy the beats!`);
+                        interaction.followUp(`<:tick:1365995106645053580> **Added a track to the queue!** Time to enjoy the beats!`);
                     } else {
                         interaction.followUp('No tracks found in the selected playlist.');
                     }
