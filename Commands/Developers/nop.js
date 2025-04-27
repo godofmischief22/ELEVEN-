@@ -21,7 +21,7 @@ module.exports = {
                                 : `#2500ff`,
                         )
                         .setDescription(
-                            `<:cross_:1083758026948886618> | Correct Usage : \`${prefix}noprefix <add/remove>\` <user>\``,
+                            `<:crosss:1144288980385415279> | Correct Usage : \`${prefix}noprefix <add/remove>\` <user>\``,
                         ),
                 ],
             });

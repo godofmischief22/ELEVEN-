@@ -18,7 +18,7 @@ module.exports = {
             return message.channel.send({ 
                 embeds: [new EmbedBuilder()
                     .setColor('#FF0000') // Use red if no color is defined
-                    .setDescription(`<:nwrong:1275390590426812426> You do not have permission to use this command.`)
+                    .setDescription(`<:crosss:1144288980385415279> You do not have permission to use this command.`)
                 ] 
             });
         }
@@ -103,7 +103,7 @@ module.exports = {
                     else {
                         b.reply({
                             ephemeral: true,
-                            content: `<:nwrong:1275390590426812426> Only **${message.author.tag}** can use this button, if you want then you've to run the command again.`,
+                            content: `<:crosss:1144288980385415279> Only **${message.author.tag}** can use this button, if you want then you've to run the command again.`,
                         });
                         return false;
                     }

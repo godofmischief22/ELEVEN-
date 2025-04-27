@@ -18,7 +18,7 @@ module.exports = {
             return message.channel.send({ 
                 embeds: [new EmbedBuilder()
                     .setColor('#FF0000') 
-                    .setDescription(`<:nwrong:1275390590426812426> You do not have permission to use this command.`)
+                    .setDescription(`<:crosss:1144288980385415279> You do not have permission to use this command.`)
                 ] 
             });
         }
@@ -27,7 +27,7 @@ module.exports = {
             return message.reply({ 
                 embeds: [new EmbedBuilder()
                     .setColor('Red')
-                    .setDescription(`<:nwrong:1275390590426812426> You didn't provide the server ID.`)
+                    .setDescription(`<:crosss:1144288980385415279> You didn't provide the server ID.`)
                 ] 
             });
         }
@@ -39,7 +39,7 @@ module.exports = {
             return message.reply({ 
                 embeds: [new EmbedBuilder()
                     .setColor('Red')
-                    .setDescription(`<:nwrong:1275390590426812426> Invalid server ID or unable to fetch the server.`)
+                    .setDescription(`<:crosss:1144288980385415279> Invalid server ID or unable to fetch the server.`)
                 ] 
             });
         }
@@ -48,7 +48,7 @@ module.exports = {
             return message.reply({ 
                 embeds: [new EmbedBuilder()
                     .setColor('Red')
-                    .setDescription(`<:nwrong:1275390590426812426> No guild found with ID: **${id}**.`)
+                    .setDescription(`<<:crosss:1144288980385415279> No guild found with ID: **${id}**.`)
                 ] 
             });
         }
@@ -56,7 +56,7 @@ module.exports = {
         await guild.leave();
         let embed = new EmbedBuilder()
             .setColor(client.embedColor)
-            .setDescription(`<:tick_icon:1275390587801178123> Successfully left the guild with ID: **${id}**`);
+            .setDescription(`<:tick:1143859502215593995> Successfully left the guild with ID: **${id}**`);
 
         message.reply({ embeds: [embed] });
     }
