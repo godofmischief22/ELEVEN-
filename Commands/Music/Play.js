@@ -80,7 +80,7 @@ module.exports = {
                     embeds: [
                         client.embed()
                             .setColor(color)
-                            .setDescription(`<:11tick:1288060052250431559> ${message.author} added "**${tracks[0].title.length > 15 ? tracks[0].title.substring(0, 15) + "..." : tracks[0].title}**" to queue`),
+                            .setDescription(`<:tick:1365995106645053580> ${message.author} added "**${tracks[0].title.length > 15 ? tracks[0].title.substring(0, 15) + "..." : tracks[0].title}**" to queue`),
                     ],
                 });
             } else {
@@ -92,7 +92,7 @@ module.exports = {
                     embeds: [
                         client.embed()
                             .setColor(color)
-                            .setDescription(`<:11tick:1288060052250431559> ${message.author} Successfully added **${tracks[0].title.length > 15 ? tracks[0].title.substring(0, 15) + "..." : tracks[0].title}** to queue`),
+                            .setDescription(`https://discord.gg/ZRXSwG3Xb6 ${message.author} Successfully added **${tracks[0].title.length > 15 ? tracks[0].title.substring(0, 15) + "..." : tracks[0].title}** to queue`),
                     ],
                 });
             }

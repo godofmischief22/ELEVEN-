@@ -28,9 +28,9 @@ module.exports = new Object({
      */
 
     async execute(client, message, args, prefix, color, dispatcher) {
-        if (!dispatcher.queue.length) return await client.util.msgReply(message, `Now Playing - [${dispatcher.queue.current.title}](https://discord.gg/teamkronix)`, color)
+        if (!dispatcher.queue.length) return await client.util.msgReply(message, `Now Playing - [${dispatcher.queue.current.title}](https://discord.gg/ZRXSwG3Xb6)`, color)
 
-        const queuedSongs = dispatcher.queue.map((track, i) => `\`${i + 1}.\` [${track.title.length > 64 ? track.title.substring(0, 64) + '...' : track.title}](https://discord.gg/teamkronix) | (${track.isStream ? 'LIVE' : client.util.duration(track.length)}) | ${track.requester}\n`);
+        const queuedSongs = dispatcher.queue.map((track, i) => `\`${i + 1}.\` [${track.title.length > 64 ? track.title.substring(0, 64) + '...' : track.title}](https://discord.gg/ZRXSwG3Xb6) | (${track.isStream ? 'LIVE' : client.util.duration(track.length)}) | ${track.requester}\n`);
         const mapping = client.util.chunk(queuedSongs, 10);
         const pages = mapping.map((s) => s.join('\n'));
         let page = 0;

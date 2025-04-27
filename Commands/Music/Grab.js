@@ -31,7 +31,7 @@ module.exports = {
           name: message.author.username || "Unknown User",
           iconURL: message.author.displayAvatarURL({ dynamic: true }),
         })
-        .setDescription('<:nwrong:1275390590426812426> There is no player for this guild. Please connect by using the join command.')
+        .setDescription('<:crosss:1144288980385415279> There is no player for this guild. Please connect by using the join command.')
         .setTimestamp();
       return message.reply({ embeds: [embed] });
     }
@@ -48,7 +48,7 @@ module.exports = {
       const embed = new EmbedBuilder()
         .setDescription(`## Grabbed the current playing song!`)
         .addFields([
-          { name: '**Title**', value: `[${song.title}](https://discord.gg/qZemu5SPjQ)`, inline: true },
+          { name: '**Title**', value: `[${song.title}](https://discord.gg/ZRXSwG3Xb6)`, inline: true },
           { name: '**Author**', value: `${song.author}`, inline: true },
           { name: `**Progress**`, value: `${convertTime(current)}/${moment.duration(total).format("hh:mm:ss")}`, inline: true },
         ])
@@ -58,10 +58,10 @@ module.exports = {
         .setTimestamp();
 
       await message.author.send({ embeds: [embed] });
-      msg.edit({ content: "<:tick_icon:1275390587801178123>  Message sent successfully.", embeds: [] });
+      msg.edit({ content: "<:tick:1365995106645053580>  Message sent successfully.", embeds: [] });
     } catch (error) {
       console.error(error);
-      msg.edit({ content: "<:nwrong:1275390590426812426> Couldn't send you a DM. Make sure your DMs are open and try again.", embeds: [] });
+      msg.edit({ content: "https://discord.gg/ZRXSwG3Xb6 Couldn't send you a DM. Make sure your DMs are open and try again.", embeds: [] });
     }
   }
 };

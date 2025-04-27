@@ -36,10 +36,10 @@ module.exports = new Object({
             dispatcher.queue.splice(0, trackNumber - 1);
             dispatcher.shoukaku.stopTrack();
             await client.util.update(dispatcher, client);
-            return await client.util.msgReply(message, `<:tick_icon:1275390587801178123> **Skipped to track number \`[ ${trackNumber} ]\` in the queue.**`, color);
+            return await client.util.msgReply(message, `<:tick:1365995106645053580> **Skipped to track number \`[ ${trackNumber} ]\` in the queue.**`, color);
         }
         dispatcher.skip();
         await client.util.update(dispatcher, client);
-        return await client.util.msgReply(message, `<:tick_icon:1275390587801178123> Skiped Current Track`, color);
+        return await client.util.msgReply(message, `<:tick:1365995106645053580> Skiped Current Track`, color);
     }
 })
