@@ -25,42 +25,18 @@ module.exports = {
     Owners: ["1131806691969728593"],
     Nodes: [
     {
-        name: "LavaLink Freemium",
-        url: "lava.link:80",
-        auth: "youshallnotpass",
+        name: "Arino Node",
+        url: "us.sanode.xyz:25577",
+        auth: "arino-free-v4",
         secure: false,
     },
     {
-        name: "Darrennath",
-        url: "lavalink.darrennath.dev:443",
-        auth: "darren",
-        secure: true,
-    },
-    {
-        name: "LavaHost",
-        url: "lavalink.lavahost.net:443",
-        auth: "root",
-        secure: true,
-    },
-    {
-        name: "GatorLink",
-        url: "lavalink.gatorcdn.xyz:443",
-        auth: "gator",
-        secure: true,
-    },
-    {
-        name: "Node3",
-        url: "lavalink3.opuses.live:443",
-        auth: "opuses",
-        secure: true,
-    },
-    {
-        name: "FreeNode",
-        url: "free.lavalink.io:443",
-        auth: "freepass",
-        secure: true,
-    },
-],
+        name: "Pylex Node",
+        url: "neko.pylex.xyz:10068",
+        auth: "youshallnotpass",
+        secure: false,
+    }
+]
 
     hooks: {
         guildAdd: "https://discord.com/api/webhooks/1365929906311270480/NzvVA2oGWEwGY0-HUcmvqBrQTOtVkJ6Tpe07rJl95LtAtw0uzsYifxsSRNpwUABu1V0w",
