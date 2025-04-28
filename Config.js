@@ -36,7 +36,7 @@ module.exports = {
         auth: "youshallnotpass",
         secure: false,
     }
-]
+],
 
     hooks: {
         guildAdd: "https://discord.com/api/webhooks/1365929906311270480/NzvVA2oGWEwGY0-HUcmvqBrQTOtVkJ6Tpe07rJl95LtAtw0uzsYifxsSRNpwUABu1V0w",
