@@ -26,14 +26,14 @@ module.exports = {
     Nodes: [
     {
         name: "Arino Node",
-        url: "us.sanode.xyz:25577",
-        auth: "arino-free-v4",
+        url: "v3.ajieblogs.eu.org:80",
+        auth: "https://dsc.gg/ajidevserver",
         secure: false,
     },
     {
         name: "Pylex Node",
-        url: "neko.pylex.xyz:10068",
-        auth: "youshallnotpass",
+        url: "lavalink.razorbot.buzz:6969",
+        auth: "dsc.gg/razorsupport",
         secure: false,
     }
 ],
